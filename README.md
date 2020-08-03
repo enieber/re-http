@@ -3,7 +3,7 @@
 [WIP]
 
 This project is to recreate projects like express or other http framework but without 
-make bindings like bs-express or bs-fastify.
+make bindings like `bs-express` or `bs-fastify`. The unique binding this project use is [bs-node-http](https://github.com/enieber/bs-node-http) 
 
 
 ## How to contribuite
