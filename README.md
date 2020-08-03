@@ -22,6 +22,7 @@ make bindings like bs-express or bs-fastify.
 - [ ] create list routers using
 - [ ] not need create router to `/api` and `/api/`
 - [ ] create crud Rest Api with `/users` using [GET, POST, PUT, DELETE] methods HTTP
+- [ ] improve use of json to response data
 
 ## Licence
 
