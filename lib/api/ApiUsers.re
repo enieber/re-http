@@ -17,7 +17,7 @@ module Encode = {
 let run = (_, response) => {
   let data = {| {
       "status": true,
-      "dynamics": { "hello": "boa", "random": 8 }
+      "dynamics": { "hello": "users", "random": 8 }
     } |};
 
   let statusApi = data |> Json.parseOrRaise;
