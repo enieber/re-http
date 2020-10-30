@@ -7,9 +7,8 @@ let start = (~request, ~response, ~routers) => {
   List.map(router => {
     let metheod = router.method
     let uriString = router.uri
-    switch (methodHttp, uri) {
-    | (metheod, uriString) => router.action(request, response)
-    | _ => ResponseNotFound.run(request, response)
+    if (metheod == methodHttp && uri == uriString) {
+      router.action(request, response)
     }
   }, routers)
 };
