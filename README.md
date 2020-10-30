@@ -19,7 +19,7 @@ make bindings like `bs-express` or `bs-fastify`. The unique binding this project
 - [x] create endpoint response html
 - [x] create endpoint response json
 - [x] create structure of projects
-- [ ] create list routers using
+- [x] create list routers using
 - [ ] not need create router to `/api` and `/api/`
 - [ ] create crud Rest Api with `/users` using [GET, POST, PUT, DELETE] methods HTTP
 - [ ] improve use of json to response data
