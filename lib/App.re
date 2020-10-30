@@ -1,17 +1,29 @@
-open Http;
+open Log;
+open Method;
 
-let start = (~request, ~response) => {
-  let methodHttp = ClientRequest.getMethod(request);
-  let uri = ClientRequest.getUrl(request);
+let routers = [
+  {
+    uri: "/api/users",
+    method:GET,
+    action: ApiUsers.run
+  },
+  {
+    uri: "/api",
+    method:GET,
+    action: ApiHome.run
+  },
+  {
+    uri: "/",
+    method: GET,
+    action: PageHome.run
+  },
+  {
+    uri: "/about",
+    method: GET,
+    action: PageAbout.run
+  },
+]
 
-  switch (methodHttp, uri) {
-  | (`GET, "/") => PageHome.run(request, response)
-  | (`GET, "/about") => PageAbout.run(request, response)
-  | (`GET, "/api") => ApiHome.run(request, response)
-  | (`GET, "/api/users") => ApiUsers.run(request, response)
+let start = (~request, ~response) => Routers.start(~request, ~response, ~routers);
 
-  | _ => Rest.bodyResponse(response, 404, "File not Found")
-  };
-};
-
-print_endline("server running in localhost:3000");
+renderRouters(routers);
