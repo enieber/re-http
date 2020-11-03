@@ -1,18 +1,18 @@
 {
-	"name": "re-http",
-	"version": "0.0.1",
-	"sources": {
-		"dir": "lib",
-		"subdirs": true
-	},
-	"package-specs": {
-		"module": "commonjs",
-		"in-source": true
-	},
-	"suffix": ".bs.js",
-	"bs-dependencies": ["bs-node-http", "@glennsl/bs-json"],
-	"warnings": {
-		"error": "+101"
-	},
-	"refmt": 3
+  "name": "re-http",
+  "version": "0.0.1",
+  "sources": {
+    "dir": "lib",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": ["bs-node-http", "@glennsl/bs-json"],
+  "warnings": {
+    "error": "+101"
+  },
+  "refmt": 3
 }

@@ -7,7 +7,7 @@ let start = (~request, ~response, ~routers) => {
   List.map(router => {
     let metheod = router.method
     let uriString = router.uri
-    if (metheod == methodHttp && uri == uriString) {
+    if (metheod == methodHttp && uri == uriString)  {
       router.action(request, response)
     }
   }, routers)

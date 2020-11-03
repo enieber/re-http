@@ -12,7 +12,6 @@ type method =
   | TRACE
   | PATCH
 
-
 type uri = string;
 
 type request = ClientRequest.t

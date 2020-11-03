@@ -8,7 +8,7 @@
   "keywords": [
     "BuckleScript"
   ],
-  "author": "",
+  "author": "Enieber Cunha",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.3.2",
@@ -19,5 +19,18 @@
     "bs-let": "^0.1.16",
     "bs-node-http": "git+https://github.com/enieber/bs-node-http.git",
     "decco": "^1.2.1"
-  }
+  },
+  "description": "[WIP]",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enieber/re-http.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enieber/re-http/issues"
+  },
+  "homepage": "https://github.com/enieber/re-http#readme"
 }
