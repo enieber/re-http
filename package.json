@@ -1,7 +1,6 @@
 {
   "name": "reason-http-node",
   "version": "0.0.6",
-  "private": false,
   "scripts": {
     "dev": "nodemon lib/sample/App.bs.js",
     "dev:re": "bsb -make-world -w"
