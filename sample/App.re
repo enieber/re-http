@@ -1,6 +1,3 @@
-open Log;
-open Method;
-
 let routers = [
   {
     uri: "/api/users",
@@ -24,6 +21,4 @@ let routers = [
   },
 ]
 
-let start = (~request, ~response) => Routers.start(~request, ~response, ~routers);
-
-renderRouters(routers);
+ReHttpNode.strat(routers, 3000)

@@ -1,6 +1,7 @@
 {
-  "name": "reason-http",
-  "version": "0.0.2",
+  "name": "reason-http-node",
+  "version": "0.0.3",
+  "private": false,
   "scripts": {
     "dev": "nodemon lib/Server.bs.js",
     "dev:re": "bsb -make-world -w"
