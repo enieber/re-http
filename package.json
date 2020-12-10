@@ -1,18 +1,26 @@
 {
-  "name": "re-http",
+  "name": "reason-http",
   "version": "0.0.1",
   "scripts": {
     "dev": "nodemon lib/Server.bs.js",
     "dev:re": "bsb -make-world -w"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "Reason",
+    "nodejs",
+    "HTTP"
   ],
   "author": "Enieber Cunha",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.3.2",
     "nodemon": "^2.0.4"
+  },
+  "peerDependencies": {
+    "bs-platform": "^7.3.2",
+    "decco": "^1.2.1",
+    "bs-let": "^0.1.16"
   },
   "dependencies": {
     "@glennsl/bs-json": "^5.0.2",
