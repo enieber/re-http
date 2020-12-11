@@ -2,7 +2,10 @@ open Http;
 
 let bodyResponse = (response, statusCode, message) => {
   ServerResponse.(
-    response |> setStatusCode(statusCode) |> write(message) |> end_
+    response 
+      |> setStatusCode(statusCode) 
+      |> write(message) 
+      |> end_
   );
 };
 
