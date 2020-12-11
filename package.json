@@ -1,23 +1,45 @@
 {
-  "name": "re-http",
-  "version": "0.0.1",
+  "name": "reason-http-node",
+  "version": "0.0.6",
+  "private": false,
   "scripts": {
-    "dev": "nodemon lib/Server.bs.js",
+    "dev": "nodemon lib/sample/App.bs.js",
     "dev:re": "bsb -make-world -w"
   },
   "keywords": [
-    "BuckleScript"
+    "BuckleScript",
+    "Reason",
+    "nodejs",
+    "HTTP"
   ],
-  "author": "",
+  "author": "Enieber Cunha",
   "license": "MIT",
   "devDependencies": {
     "bs-platform": "^7.3.2",
     "nodemon": "^2.0.4"
+  },
+  "peerDependencies": {
+    "bs-platform": "^7.3.2",
+    "decco": "^1.2.1",
+    "bs-let": "^0.1.16"
   },
   "dependencies": {
     "@glennsl/bs-json": "^5.0.2",
     "bs-let": "^0.1.16",
     "bs-node-http": "git+https://github.com/enieber/bs-node-http.git",
     "decco": "^1.2.1"
-  }
+  },
+  "description": "[WIP]",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enieber/re-http.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enieber/re-http/issues"
+  },
+  "homepage": "https://github.com/enieber/re-http#readme"
 }
