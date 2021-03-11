@@ -1,4 +1,5 @@
 open Server;
+open Rest;
 
 let start = (~routers, ~port) => {
     let app = Http.createServer((~request, ~response) => {

@@ -29,7 +29,7 @@
     "decco": "^1.2.1"
   },
   "description": "[WIP]",
-  "main": "index.js",
+  "main": "lib/ReHttpNode.re",
   "directories": {
     "lib": "lib"
   },
